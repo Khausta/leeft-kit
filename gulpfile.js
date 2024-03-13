@@ -45,6 +45,10 @@ const paths = {
   fonts: {
     src: 'src/fonts/**',
     dest: 'dist/fonts/'
+  },
+  video: {
+    src: 'src/video/**',
+    dest: 'dist/video/'
   }
 }
 
@@ -81,6 +85,12 @@ function html() {
 function fonts() {
   return gulp.src(paths.fonts.src)
     .pipe(gulp.dest(paths.fonts.dest))
+    .pipe(browsersync.stream())
+}
+
+function video() {
+  return gulp.src(paths.video.src)
+    .pipe(gulp.dest(paths.video.dest))
     .pipe(browsersync.stream())
 }
 
@@ -175,4 +185,4 @@ exports.img = img
 exports.watch = watch
 
 // Таск, который выполняется по команде gulp
-exports.default = gulp.series(clean, html, gulp.parallel(fonts, styles, scripts, img), watch)
+exports.default = gulp.series(clean, html, gulp.parallel(fonts, video, styles, scripts, img), watch)
