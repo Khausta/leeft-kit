@@ -136,7 +136,7 @@ function scripts() {
     presets: ['@babel/env']
   }))
   .pipe(uglify())
-  .pipe(concat('main.min.js'))
+  // .pipe(concat('main.min.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(size({
     showFiles:true
