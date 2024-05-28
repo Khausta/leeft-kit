@@ -1,0 +1,98 @@
+.cases {
+    .text {
+        padding-left: $size-20px;
+    }
+
+    &__blocks {
+        margin-bottom: $size-70px;
+    }
+   
+    &__big-cards {
+        margin-bottom: $size-30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: $size-20px;
+    }
+
+    &__card-text {
+        width: 90%;
+    }
+
+    &__big-card-img {
+        margin-bottom: 10px;
+        height: clamp(100px, 27vw, 500px);
+        background: $grey-border-color;
+        border-radius: 30px;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+            transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                height: 102%;
+                width: 102%;
+            }
+        }
+    }
+
+    &__small-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: $size-20px;
+    }
+
+    &__small-card-img {
+        margin-bottom: 10px;
+        height: clamp(100px, 22.2vw, 426px);
+        background: $grey-border-color;
+        border-radius: 30px;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+            transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                height: 102%;
+                width: 102%;
+            }
+        }
+
+    }
+
+    &__button-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        text-transform: uppercase;
+    }
+
+    &__button {
+        transition: all .3s ease-in-out;
+
+        &:hover {
+        background: $grey-border-color;
+        }
+    }
+
+    .second-title {
+        text-align: left;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+.faq {
+
+    &__list {
+        padding-top: clamp(5px, 0.8vw, 20px);
+        list-style: none;
+        width: clamp(320px, 59vw, 1130px);
+    }
+    
+    &__item {
+        padding-bottom: $size-20px;
+        padding-top: $size-20px;
+        position: relative;
+        transition: all .2s linear; 
+        
+        &:not(:last-child) {
+            border-bottom: 1px solid $grey-border-color;
+        }
+    }
+
+    &__question {
+        position: relative;
+
+        &._active {
+            margin-bottom: 10px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: 0;
+            width: clamp(10px, 2.08vw, 40px);
+            height: clamp(10px, 2.08vw, 40px);
+            background-image: url("../img/cross-icon.svg");
+            background-size: contain;
+            background-position: center;
+            // transform: rotate(45deg);
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg) ;
+            transition: transform .2s ease-in;  
+        }
+    }
+    
+    &__question-text {
+        padding-right: clamp(10px, 6vw, 145px);
+        font-family: "Golos Text", sans-serif;
+        font-size: clamp(5px, 1.66vw, 32px);
+        line-height: 1.1;
+        color: $black-color;
+        cursor: pointer;
+    }
+
+    &__text {
+        padding-right: clamp(10px, 6vw, 145px);
+        opacity: 0;
+        transition: all .2s linear;
+        max-height: 0;
+    }
+
+    ._active::after {       
+        transform: translateY(-50%) rotate(90deg);
+        transition: transform .2s ease-in;
+    }
+}

@@ -1,0 +1,62 @@
+@import 'libs/style';
+
+.error {
+    height: 100vh;
+    max-width: 1920px;
+    margin: auto;
+    padding-top: $size-70px;
+    background: #003A49;
+    overflow: hidden;
+    
+    .key-word {
+        margin-bottom: $size-30px;
+        color: #B4C2C8;
+    }
+
+    .title-block {
+        padding-top: 0;
+        width: clamp(300px, 52vw, 968px);
+    }
+
+    h1 {
+        margin-bottom: $size-70px;
+        color: $white-color;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__button {
+        padding-left: clamp(10px, 3vw, 60px);
+        padding-right: clamp(10px, 3vw, 60px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .error {
+        padding-top: 21vw;
+
+        .key-word {
+            margin-bottom: 10vw;
+        }
+        .title-block {
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 21vw;
+        }
+
+        &__title-block {
+            margin-bottom: 28vw;
+        }
+    }
+
+    .button_big {
+        padding: 8.6vw 7vw;
+    }
+
+   
+}

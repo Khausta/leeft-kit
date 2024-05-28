@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .cases {
+        .text {
+            padding-left: 5vw;
+        }
+
+        &__card-text {
+            width: 100%;
+        }
+
+        margin-bottom: 10vw;
+
+        &__big-cards {
+            margin-bottom: 6.2vw;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 6.2vw;
+        }
+    
+        &__big-card-img {
+            
+            height: 66.6vw;
+            border-radius: 30px;
+    
+            img {
+                object-fit: cover;
+                height: 100%;
+               
+            }
+            
+        }
+
+        &__small-cards {
+            margin-bottom: 10vw;
+            grid-template-columns: 1fr;
+            gap: 6.2vw;
+        }
+
+        &__small-card-img {
+            height: 66.6vw;
+        }
+
+        &__button:hover {
+            background: none;
+        }
+    }
+}

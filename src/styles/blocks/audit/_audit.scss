@@ -1,0 +1,36 @@
+.audit {
+
+    .second-title {
+        margin-bottom: $size-50px;
+    }
+
+    &__benefits {
+        margin-bottom: $size-50px;
+        padding-bottom: $size-50px;
+        display: flex;
+        justify-content: start;
+        gap: $size-50px;
+        border-bottom: 1px solid $grey-border-color;
+    }
+
+    &__benefit {
+        max-width: clamp(60px, 12vw, 228px);
+    }
+
+    i {
+        display: inline-block;
+        margin-bottom: $size-20px;
+        font-size: $size-40px;
+        color: $dark-background;
+    }
+
+    &__benefit-text {
+        font-family: "Golos Text", sans-serif;
+        font-size: $size-15px;
+        color: $black-color;
+        line-height: 1.2;
+
+    }
+
+    
+}

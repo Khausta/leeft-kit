@@ -1,0 +1,39 @@
+.geo {
+
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: $size-50px;
+    }
+
+    &__map {
+        display: inline-block;
+        width: clamp(320px, 51.6vw, 990px);
+        flex-shrink: 0;
+    }
+
+    &__img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text-content {
+        display: inline-flex;
+        flex-direction: column;
+        gap: $size-20px; 
+        color: red;
+    }
+
+    .button {
+        margin-top: clamp(10px, 2.2vw, 42px);
+        width: min-content;
+        text-transform: uppercase;
+    }
+
+
+    .feedback-block {
+        text-align: left;
+    }
+}

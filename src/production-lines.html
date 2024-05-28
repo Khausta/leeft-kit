@@ -1,0 +1,351 @@
+<!-- head  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/icons-font.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src='./js/main.js' defer></script>
+</head>
+<!-- /head  -->
+
+<body>    
+    <!-- menu  -->
+    <header class="header">
+        <div class="container header__box">
+            <!-- logotype -->
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="./img/logo.svg"/>
+            </a>
+
+             <!-- menu -->
+             <div class="header__menu">
+                <div class="header__wrapper">
+                    <p class="key-word header__key-word">Меню</p>
+                    <button type="button" class="header__close close-button">
+                        <img src="img/cross-icon.svg" alt="Закрыть">
+                    </button>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__link golos-text-regular menu__link_mob" href="services.html">Услуги</a>
+                            </li>
+                            <li>
+                                <a class="menu__link golos-text-regular menu__link_mob" href="cases.html">Кейсы</a>
+                            </li>
+                            <li>
+                                <a class="menu__link golos-text-regular menu__link_mob _active" href="production-lines.html">Производственное оборудование</a>
+                            </li>
+                            <li>
+                                <a class="menu__link golos-text-regular menu__link_mob" href="company.html">Компания</a>
+                            </li>
+                            <li>
+                                <a class="menu__link golos-text-regular menu__link_mob" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="phone-number" href="tel:+8613071889665">+86 130-7188-9665</a>
+                    <button class="button light-blue-bg header__feedback header__feedback_mob  _js_openFeedBackForm" >Оставить заявку</button>
+                </div>
+            </div>
+
+            <!-- contact buttons -->
+            <div class="header__contact">
+                <a class="whatsapp button header__whatsapp border-gray " href="#">
+                    <i class="_icon-whatsapp"></i>
+                    WhatsApp  
+                </a>
+                <button class="button dark-bg header__feedback header__feedback_desk  _js_openFeedBackForm">Оставить заявку</button>
+                <div class="menu-burger">
+                    <img src="img/menu-burger.svg" alt="Иконка меню">                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="title-block">
+                    <h1 class="title-block__max-width title-block_audit">
+                        Производственные линии и&nbsp;станки с&nbsp;ЧПУ
+                    </h1>    
+                </div>
+                <div class="feedback-block">
+                    <button class="button light-blue-bg _js_openFeedBackForm">оставить заявку</button>
+                    <a class="feedback-block__link" href="#production-lines">
+                        подробнее 
+                        <i class="_icon-arrow-right-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <picture>
+                <source srcset="img/banner-photos/production-lines-mob.png" media="(max-width: 768px)">
+                <img class="banner__img" src="img/banner-photos/production-lines.png" alt="Фотография аудитора">
+            </picture>
+        </section>
+
+        
+        <section class="section production-lines" id="production-lines">
+            <div class="container">
+                <div class="layout">
+                    <div class="layout__left-side">
+                        
+                        <h2 class="second-title second-title_production-lines">
+                            Одним из основных направлений нашей 
+                            деятельности является поставки 
+                            производственного оборудования 
+                            разных направлений: металлообработка, 
+                            бумажная промышленность, 
+                            литьё пластиковых изделий, 
+                            деревообрабатывающая промышленность 
+                            и&nbsp;другие виды производств.
+                        </h2>                       
+                        <p class="text">
+                            В связи с&nbsp;мировой ситуацией и&nbsp;ухода западных партнеров 
+                            с&nbsp;российского рынка, кратно увеличилось число запросов 
+                            на&nbsp;поставку альтернативного оборудования из&nbsp;Китая. 
+                            На сегодняшний день мы ведем активное сотрудничество 
+                            с&nbsp;большинством крупнейших и&nbsp;наиболее опытных 
+                            производителей в&nbsp;Китае, и&nbsp;можем гарантировать 
+                            только лучшее качество оборудования и&nbsp;многолетний опыт 
+                            тех или иных производителей, качество, проверенное в&nbsp;условиях
+                             эксплуатации нашими клиентами.
+                        </p>
+
+                        <p class="text">
+                            Благодаря наработанной временем и&nbsp;только прямым взаимодействием, 
+                            базы производств, мы можем обеспечить оперативное решение на&nbsp;Ваш
+                             запрос, предоставив множество вариантов для принятия решения, 
+                             организации Вашего визита на производства, оборудование которых 
+                             Вам показалось интересным.
+                        </p>
+
+                        <h3 class="third-title">
+                            Европейские станки ушли с&nbsp;рынка и&nbsp;остро стоит вопрос о&nbsp;дальнейшем
+                            обеспечении мощностей, но работа с&nbsp;Китаем больше не кажется такой
+                            туманной.
+                        </h3>
+                        <p class="text">
+                            Например Вам нужно поставить токарный, фрезерный, или токарно&#8209;фрезерный 
+                            станок с&nbsp;определенным количеством осей, с&nbsp;рядом необходимых опций, 
+                            согласно Вашему ТЗ. Отправьте нам спецификацию на желаемый станок, и&nbsp;мы 
+                            предоставим Вам актуальную информацию в&nbsp;течение 1&#8209;3 рабочих дней. 
+                            Импортная электрика и&nbsp;электроника, механика, ЧПУ Fanuc или Siemens или 
+                            другие бренды на выбор, всё это будет присутствовать на требуемом оборудовании, 
+                            строго соответствуя Вашему запросу.
+                        </p>
+
+                        <div class="production-lines__wrapper text">
+                            <div class="production-lines__item">
+                                <div class="production-lines__img-box">
+                                    <img src="img/production-lines-1.png" alt="Фото ЧПУ от японской компании FANUC">
+                                </div>
+                                <p class="production-lines__text">
+                                    ЧПУ от японской компании FANUC
+                                </p>
+                            </div>
+                            <div class="production-lines__item">
+                                <div class="production-lines__img-box">
+                                    <img src="img/production-lines-2.png" alt="Фото ЧПУ от немецкой Siemens">
+                                </div>
+                                <p class="production-lines__text">
+                                    ЧПУ от немецкой Siemens
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="text">
+                            С рядом известных и наиболее опытных производителей мы имеем уникальные соглашения 
+                            и&nbsp;можем поставить то, что самостоятельно удастся реализовать только через 
+                            дилерства, заплатив при этом 2&#8209;3 цены. Наши предложения идут напрямую от 
+                            заводов&#8209;изготовителей и&nbsp;любые другие предложения на рынке не могут 
+                            конкурировать с&nbsp;нами по основным критериям цена/качество/надежность.
+                        </p>
+
+                        <h3 class="third-title">
+                            Важнейшим аспектом является пуско&#8209;наладка, обучение и&nbsp;дальнейшее 
+                            обслуживание поставленного оборудования.
+                        </h3>
+
+                        <p class="text">
+                            В нашем штате есть команда специалистов, готовые выполнить все поставленные 
+                            задачи, а&nbsp;также, по умолчанию, команда от производителя, где будет 
+                            размещаться заказ. Мы обеспечим должное обслуживание и избавим Вас от 
+                            каких&#8209;либо возможных сложностей в&nbsp;период эксплуатации. 
+                            Оставьте заявку и&nbsp;наш специалист свяжется с&nbsp;Вами для обсуждения деталей.
+                        </p>
+
+
+                    </div>
+                    <div class="layout__right-side">
+                        <!-- empty container -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- main feedback form  -->
+        <section class="section feedback">
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <div class="second-title">
+                        Будем рады сотрудничеству.
+                        <span class="second-title_string">Мы оперативно ответим</span>
+                        на все Ваши вопросы
+                    </div>
+                    <form class="form" action="#">
+                        <input class="form__input text" type="text" name="name" placeholder="Имя">
+                        <input class="form__input text" type="tel" name="phone" placeholder="Телефон с кодом страны">
+                        <button type="submit" class="button text form__button dark-bg _js_feedback-submit-btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                
+                <!-- menu -->
+                <nav class="footer__menu menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li>
+                            <a class="menu__link footer__text" href="cases.html">Кейсы</a>
+                        </li>
+                        <li>
+                            <a class="menu__link footer__text" href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a class="menu__link footer__text" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- service -->
+                <div class="footer__service">
+                    <p class="footer__text footer__service-title ">
+                        Услуги
+                    </p>
+                    <div class="footer__service-blocks">
+                        <div class="footer__service-block">
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Поиск товара и оборудования
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Организация и расчет стоимости логистики «под ключ»
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Аудит фабрики с предоставлением
+                                фото- и видео отчета
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Перевод документации с русского на китайский, и наоборот
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Встреча клиента и организация маршрута командировки
+                            </a>
+                        </div>
+                        <div class="footer__service-block">
+                            <a class="footer__service-item footer__text" href="audit.html">
+                                Инспекция готовой продукции по техзаданию заказчика
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Разрешение конфликтов с китайскими поставщиками
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Виртуальное посещение выставки и сбор данных
+                            </a>
+                            <a class="footer__service-item footer__text" href="error-404.html">
+                                Выкуп, консолидация и отправка образцов
+                            </a>
+                            <a class="footer__service-item footer__text" href="import.html">
+                                Импорт различного товара и оборудования из стран Северной Америки и Европы
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- contacts -->
+                <div class="footer__contacts">
+                    <a class="phone-number" href="tel:+8613071889665">+86 130-7188-9665</a>
+                    <a class="whatsapp button  border-gray " href="#">
+                        <i class="_icon-whatsapp"></i>
+                        WhatsApp 
+                    </a>    
+                </div>
+
+                <!-- rights  -->
+                <div class="footer__text footer__rights">
+                    <p>
+                        ©&nbsp;2024&nbsp;East&nbsp;Ocean&nbsp;Whale
+                    </p>
+                    <p>
+                        Все&nbsp;права&nbsp;защищены
+                    </p>
+                </div>
+
+                <!-- design  -->
+                <div class="footer__design">
+                    <a href="https://o1sdesign.com/" class="footer__text footer__design-block">
+                        <span class="footer__design_title">Дизайн сайта</span>
+                        <span class="footer__design_link">O’1S Design</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
+    <!-- popup  -->
+    <div class="overlay">
+        <div class="popup popup_feedback ">
+            <div class="popup__header">
+                <h2 class="second-title">
+                    Будем рады 
+                    сотрудничеству
+                </h2>
+                <button type="button" class="close-button _js_closePopupForm">
+                    <img class="_js_closePopupForm_img" src="img/cross-icon.svg" alt="Закрыть">
+                </button>
+            </div>
+            <form class="popup__form" action="#">
+                <input class="popup__input text" type="text" name="name" placeholder="Имя">
+                <input class="popup__input text" type="tel" name="phone" placeholder="Телефон с кодом страны">
+                <button type="submit" class="button text popup__button dark-bg _js_popup-button">Оставить заявку</button>
+                <p class="popup__note">специалист свяжется с Вами в течение этого дня</p>
+            </form>
+        </div>
+        <div class="popup popup_success _js-popup-success">
+            <h2 class="second-title">
+                Заявка отправлена!
+            </h2>
+            <p class="text">
+                Специалист свяжется с Вами 
+                в течение этого дня. Благодарим 
+                за обращение!
+            </p>
+            <div>
+                <img src="img/popup-done.svg" alt="">
+            </div>
+            <button class="popup__link-close small-grey-text _js-popup-success-close-btn">
+                Хорошо, закрыть окно
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

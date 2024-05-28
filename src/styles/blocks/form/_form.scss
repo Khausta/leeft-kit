@@ -1,0 +1,35 @@
+.form {
+    width: clamp(200px, 40.6vw, 778px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 18px;
+
+    &__input {
+        padding-left: 20px;
+        box-sizing: border-box;
+        flex-grow: 1;
+        height: clamp(40px, 4.16vw, 80px);
+        border-radius: $size-20px;
+        border: none;
+        background: $white-color;
+
+        &::placeholder {
+            color: #98A8AE;
+        }
+        
+    }
+
+    &__button {
+        width: 100%;
+        border-radius: 20px;
+        height: clamp(40px, 4.16vw, 80px);
+        font-weight: 500;
+    }
+
+    .dark-bg {
+        color: $white-color;
+    }
+   
+}

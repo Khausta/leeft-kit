@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .side-form {
+        // padding-bottom: $mb-sections-mobile;
+        // margin-bottom: $mb-sections-mobile;
+       
+
+        &_desk {
+            display: none;
+        }
+
+        &_mob {
+            display: block;
+            padding-bottom: 10vw;
+            border-bottom: 1px solid $grey-border-color;
+            margin-bottom: 10vw;
+        }
+
+        &__head {
+            padding: 6.1vw;
+            border-radius: 30px;
+        }
+
+        &__big-text {
+            margin-bottom: 0;
+            font-size: 5.4vw;
+        }
+
+        &__input, &__button {
+            height: 14vw;
+            border-radius: 20px;
+        }
+
+        &__input {
+            padding-left: 6.1vw;
+        }
+
+        &__note {
+            font-size: 3.1vw;
+        }
+        
+    }
+}

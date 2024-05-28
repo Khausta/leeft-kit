@@ -1,0 +1,29 @@
+.production-lines {
+ 
+    &__wrapper {
+        
+        display: flex;
+        gap: clamp(5px, 1.4vw, 26px);
+        
+    }
+
+    &__img-box {
+        width: clamp(120px, 29vw, 540px);
+        height: clamp(60px, 22vw, 400px);
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: clamp(3px, 1vw, 19px);
+        color: #78898F;
+    }
+}

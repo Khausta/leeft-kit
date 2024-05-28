@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .audit {
+        &__benefits {
+            margin-bottom: 10vw;
+            padding-top: 1vw;
+            column-gap: 1vw;
+            row-gap: 5vw;
+            border: none; 
+            flex-wrap: wrap;  
+        }
+        &__benefit {
+            max-width: 45vw;
+        }
+
+        i {
+            font-size: 10vw;
+        }
+
+        &__benefit-text {
+            font-size: 3.9vw;
+        }
+    }
+}

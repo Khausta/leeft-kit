@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .layout {
+        padding-bottom: 0;
+        flex-direction: column;
+        gap: 0;
+
+        &__right-side, &__left-side {
+            width: 100%;
+        }
+
+        .second-title {
+            margin-bottom: 4.1vw;
+        }
+        
+        &__left-side {
+            
+            .key-word {
+                margin-bottom: 5vw;
+            }
+
+            .third-title {
+                margin-bottom: 4.1vw;
+            }
+
+            &_mb-10vw {
+                margin-bottom: 10vw;
+            }
+        }
+
+        .key-words-title {
+            margin-bottom: 4vw;
+            font-size: 3.9vw;
+        }
+
+       
+    }
+}

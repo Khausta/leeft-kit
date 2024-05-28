@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+    .our-business.section {
+        margin-bottom: $size-24px-for-mob;
+    }
+    .our-business {
+        text-align: left;
+
+        &_company {
+            padding-top: 10vw;
+        }
+
+        .second-title {
+            margin-bottom: $size-24px-for-mob;
+            min-width: 100%;
+        }
+
+        &__key-word {
+            margin-bottom: 4.6vw;
+        }
+
+        &__big-cards, &__small-cards {
+        
+            grid-template-columns: 1fr;
+            gap: 2.18vw;
+        }
+
+        &__big-cards {
+            margin-bottom: 2vw;
+        }
+
+        &__big-card {
+            height: 68vw;
+           
+
+            &:nth-child(1) {
+                background: url("../img/big-card-bg-image-1-mob.svg");
+                background-color: $dark-background;
+                background-size: 100% auto;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(2) {
+                background: url("../img/big-card-bg-image-2-mob.svg");
+                background-color: $dark-background;
+                background-size: 100% auto;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
+
+            .text {
+                padding: 6.2vw 6.2vw 1vw 6.2vw;
+                margin-bottom: 2.5vw;
+            }
+           
+        }
+
+        &__wave {
+            display: none;
+        }
+
+        &__small-cards {
+            grid-auto-rows: 45.2vw;
+         
+        }
+
+        &__small-card {
+            padding: 6vw;
+
+            i {
+                font-size: 10vw;
+                color: $dark-background;
+            }
+
+            &:nth-child(1) {
+                .text {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2) {
+                .text {
+                    width: 90%;
+                }
+            }
+
+            &:nth-child(4) {
+                .text {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(5) {
+                .text {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(6) {
+                .text {
+                    width: 90%;
+                }
+            }
+        }
+
+        .text {
+            
+            line-height: 1.3;
+        }
+
+        &__small-text {
+            padding-left: 6.2vw;
+            padding-right: 6.2vw;
+            font-size: 3.34vw;
+        }
+
+    }
+}

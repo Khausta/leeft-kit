@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .form {
+        &__input {
+            height: 14vw;
+            border-radius: 20px;
+        }
+
+        &__button {
+            height: 14vw;
+        }
+    }   
+}

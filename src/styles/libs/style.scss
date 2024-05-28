@@ -1,0 +1,657 @@
+@import 'fonts';
+@import 'variables';
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: $white-color;
+
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    border: none;
+}
+
+header, footer {
+    margin: auto;
+    max-width: 1920px;
+}
+
+main {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.js-error {
+    border: 1px solid red !important;
+}
+
+.main-container {
+    position: relative;
+    background: $white-color;
+    margin: auto;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 0 $size-70px;
+}
+
+.button {
+    padding: 0 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(18px, 2.34vw, 45px);
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: $border-radius-17px;
+    font-size: $size-14px;
+    background: none;
+    transition: all .2s ease-in-out;
+
+    &_middle {
+        height: clamp(30px, 4.16vw, 90px);
+    }
+
+    &_big {
+        height: clamp(30px, 5.97vw, 114px);
+        font-size: clamp(10px, 1.94vw, 36px);
+        padding-left: clamp(10px, 4.72vw,88px);
+        padding-right: clamp(10px, 4.72vw, 88px);
+        border-radius: clamp(20px, 3vw, 60px);
+    }
+}
+
+.border-gray {
+    border: 1px solid $grey-border-color;
+    color: $black-color;
+}
+
+.dark-bg {
+    background: $dark-background;
+    color: $white-color;
+}
+
+.button.dark-bg:hover {
+    background: #1c677b;
+}
+
+.light-blue-bg {
+    background: $light-blue-background;
+    color: $white-color;
+    text-transform: uppercase;
+}
+
+.button.light-blue-bg:hover {
+    background: #138fb1;
+}
+
+
+
+//whatsapp-link
+.whatsapp {
+    font-size: $size-15px;
+    font-family: "Golos Text", sans-serif;
+    background: $white-color;
+
+    i {
+        padding-right: 5px;
+        color: #25D366;
+    }
+}
+
+.whatsapp.button:hover {
+    background: $grey-border-color;
+}
+
+//main title block
+.title-block {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    &_audit {
+        width: 64%;
+    }
+
+    &__services {
+        width: 92%;
+    }
+
+    h1 {
+        margin: auto;
+        margin-bottom: 30px;
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 500;
+        font-size: clamp(20px, 3.47vw, 65px);
+        line-height: 1.05;
+    }
+    
+    p {
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: clamp(250px, 51.94vw, 1000px);
+    }
+}
+
+.text {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: clamp(8px, 1.24vw, 23px);
+    line-height: 1.3;
+    color: $black-color;
+}
+
+.text_partners {
+    font-size: clamp(10px,1.66vw,29px);
+    width: 96%;
+    
+}
+
+.text_company-geo {
+    margin: auto;
+    width: 70%;
+}
+
+
+
+//feedback block
+.feedback-block {
+    margin-bottom: $size-70px;
+    text-align: center;
+
+    &__link {
+        padding: 0 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(18px, 2.34vw, 45px);
+    border-radius: clamp(10px, 1.2vw, 24px);
+        margin-left: 20px;
+        color: $black-color;
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 500;
+        font-size: $size-14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background: $grey-border-color;
+        }
+    }
+}
+
+.banner {
+    margin-bottom: 70px;
+    width: 100%;
+
+    &__img {
+        width: 100%;
+        mask-image: url("../img/mask/mask.svg");
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        mask-position: center;
+    }
+
+}
+
+.key-word {
+    display: inline-block;
+    padding: 6px 14px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: $size-14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border-radius: $border-radius-17px;
+    border: 1px solid $grey-border-color;
+}
+
+.key-word-layout {
+    margin-bottom: $size-30px;
+}
+
+.second-title {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 2.22vw, 41px);
+    line-height: 1.16;
+    color: $black-color;
+
+    &_import {
+        width: 90%;
+        margin-bottom: $size-30px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &_partners {
+        width: 90%;
+    }
+
+    &_company-geo {
+        margin: auto;
+        width: 90%;
+    }
+
+    &_production-lines {
+        margin-bottom: $size-30px;
+    }
+}
+
+.third-title {
+    margin-bottom: $size-20px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: $size-24px;
+    line-height: 1.16;
+    color: $black-color;
+}
+
+.key-words-title {
+    margin-bottom: $size-20px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: $size-15px;
+    line-height: 1.16;
+    color: #98A8AE;;
+}
+
+.section {
+    margin-bottom: $size-70px;
+}
+
+
+.feedback {
+   &__wrapper {
+    padding: clamp(20px, 3.46vw, 60px);
+    display: flex;
+    background: #EFF4F5;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+    .second-title {
+        width: clamp(200px, 38vw, 592px);
+
+        &_string {
+            display: block;
+        }
+    }
+   }
+}
+
+
+.plan {
+    .second-title {
+        margin-bottom: $size-20px;
+    }
+
+}
+
+.small-text {
+    font-size: clamp(8px, 0.9vw, 17px);
+    line-height: 1.2;
+}
+
+.small-grey-text {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: clamp(5px, 1vw, 20px);
+    color: #98A8AE;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.control-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+}
+
+.in-color {
+    color: #0A66C2;
+}
+
+.close-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.over-page-grey-line {
+    border-bottom: 1px solid $grey-border-color;
+
+    &_company {
+        margin-bottom: $size-70px;
+    }
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(8%, 7%, 13%, 0.2);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    z-index: -2;
+}
+
+.overlay._active {
+    position: fixed;
+    opacity: 1;
+    z-index: 100;
+}
+
+.popup {
+    padding: $size-30px;
+    max-width: clamp(240px, 29.2vw, 550px);
+    max-height: clamp(200px, 27.64vw, 488px);
+    border-radius: $size-30px;
+    background: #EFF4F5;
+
+    &_feedback {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        z-index: -2;
+    }
+
+    &_success {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        z-index: -2;
+    }
+
+    &_feedback._active,  &_success._active, &__video._active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    &__header {
+        margin-bottom: clamp(3px, 1.9vw, 40px);
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__input, &__button {
+        margin-bottom: 10px;
+        width: 100%;
+        height: $size-60px;
+        border: none;
+    }
+
+    &__button {
+        color: $white-color;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__link-close {
+        border: none;
+        background: none;
+    }
+
+    &__input {
+        
+        padding-left: $size-20px;
+        border-radius: $size-20px;
+    }
+
+    &__note {
+        font-family: "Golos Text", sans-serif;
+        font-size: clamp(4px, 0.8vw, 16px);
+        color: $grey-key-word-color;
+        line-height: 1.2;
+        text-align: center;
+    }
+    &_success {
+        text-align: center;
+
+        .second-title {
+            margin-bottom: $size-20px;
+        }
+
+        .text {
+            margin-bottom: clamp(3px, 1.9vw, 40px)
+        }
+
+        .small-grey-text {
+            display: inline-block;
+            margin-top: $size-60px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.video {
+   
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(8%, 7%, 13%, 0.2);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    z-index: -2;
+
+    &__video {
+        position: relative;
+        width: clamp(300px, 71vw, 1358px);
+        height: clamp(100px, 40vw, 768px);
+    }
+
+    &__close {
+        position: absolute;
+        left: calc(100% + 10px);
+        z-index: 3;
+        cursor: pointer;
+    }
+}
+
+.video._active {
+    position: fixed;
+    opacity: 1;
+    z-index: 100;
+}
+
+.photos {
+
+    &__layout {
+        display: grid;
+        grid-template-columns:  clamp(100px, 60vw, 1152px) auto;
+        grid-template-rows: clamp(50px, 32vw, 614px);
+        gap: $size-20px;
+    }
+
+    &__right-side {
+        border-radius: $size-30px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__slide {
+        border-radius: $size-30px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__swiper {
+        width: 100%;
+    }
+
+    &__swiper-next, &__swiper-prev {
+        width: clamp(20px, 5.6vw, 108px);
+        height: clamp(20px, 5.6vw, 108px);
+        cursor: pointer;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__swiper-prev {
+        position: absolute;
+        
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+        left: 2%;
+    }
+    &__swiper-next {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+        right: 2%;
+    }
+}
+
+.phone-number {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Golos Text", sans-serif;
+    color: $black-color;
+    text-decoration: underline;
+    font-size: clamp(5px, 1.25vw, 24px);
+    line-height: 1.5;
+    transition: all .2s;
+
+    &:hover {
+        color: #98a8ae;
+    }
+}
+
+.contact-links {
+    margin-bottom: $size-20px;
+    display: flex;
+    gap: $size-20px;
+    justify-content: center;
+
+    &__item {
+        width: $size-32px;
+        height: $size-32px;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    } 
+}
+
+
+
+
+
+
+@import 'media';
+@import '../blocks/header/header';
+@import '../blocks/header/media';
+@import '../blocks/cases/cases';
+@import '../blocks/cases/media';
+@import '../blocks/footer/footer';
+@import '../blocks/footer/media';
+@import '../blocks/audit/audit';
+@import '../blocks/audit/media';
+@import '../blocks/side-form/side-form';
+@import '../blocks/side-form/media';
+@import '../blocks/layout/layout';
+@import '../blocks/layout/media';
+@import '../blocks/faq/faq';
+@import '../blocks/faq/media';
+@import '../blocks/form/form';
+@import '../blocks/form/media';
+@import '../blocks/our-business/our-business';
+@import '../blocks/our-business/media';
+@import '../blocks/production-lines/production-lines';
+@import '../blocks/production-lines/media';
+
+
+
+.menu__link._active, 
+.footer__service-item._active {
+    color: $active-menu-color;
+}

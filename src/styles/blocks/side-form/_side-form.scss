@@ -1,0 +1,50 @@
+
+//additional form from layout side
+.side-form {
+    width: 100%;
+
+    &_mob {
+        display: none;
+    }
+
+    &__head {
+        margin-bottom: $size-20px;
+        padding: $size-30px;
+        border-radius: $size-30px;
+        border: 1px solid $grey-border-color;
+    }
+
+    &__big-text {
+        margin-bottom: 10px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        font-size: clamp(16px, 2.22vw, 41px);
+        line-height: 1.16;
+        color: $light-blue-background;
+    }
+
+    &__input {
+        margin-bottom: 10px;
+        padding-left: $size-20px;
+        width: 100%;
+        height: $size-60px;
+        border: none;
+        border-radius: $size-20px;
+        background: #EFF4F5;
+    }
+
+    &__button {
+        margin-bottom: 10px;
+        width: 100%;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+
+    &__note {
+        font-family: "Golos Text", sans-serif;
+        font-size: clamp(4px, 0.83vw, 22px);
+        color: $grey-key-word-color;
+        line-height: 1.2;
+        text-align: center;
+    }
+}

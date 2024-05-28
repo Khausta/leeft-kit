@@ -73,7 +73,7 @@ function pug() {
 function html() {
   return gulp.src(paths.html.src)
   //.pipe(gulppug())
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: false }))
   .pipe(size({
     showFiles:true
   }))
@@ -96,30 +96,40 @@ function video() {
 
 
 // Обработка препроцессоров стилей
+// function styles() {
+//   return gulp.src(paths.styles.src)
+//   .pipe(sourcemaps.init())
+//   //.pipe(less())
+//   //.pipe(stylus())
+//   // .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
+//   .pipe(sass({ style: 'expanded' }).on('error', sass.logError))
+//   .pipe(autoprefixer({
+//     cascade: false
+//   }))
+//   .pipe(cleanCSS({
+//     level: 2
+//   }))
+//   // .pipe(rename({
+//   //   basename: 'style',
+//   //   suffix: '.min'
+//   // }))
+//   .pipe(sourcemaps.write('.'))
+//   .pipe(size({
+//     showFiles:true
+//   }))
+//   .pipe(gulp.dest(paths.styles.dest))
+//   .pipe(browsersync.stream())
+// }
+
 function styles() {
   return gulp.src(paths.styles.src)
-  .pipe(sourcemaps.init())
-  //.pipe(less())
-  //.pipe(stylus())
-  // .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
-  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-  .pipe(autoprefixer({
-    cascade: false
-  }))
-  .pipe(cleanCSS({
-    level: 2
-  }))
-  // .pipe(rename({
-  //   basename: 'style',
-  //   suffix: '.min'
-  // }))
-  .pipe(sourcemaps.write('.'))
-  .pipe(size({
-    showFiles:true
-  }))
-  .pipe(gulp.dest(paths.styles.dest))
-  .pipe(browsersync.stream())
-}
+      .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+      // .pipe(rename({suffix: '.min', prefix: ''}))
+      .pipe(autoprefixer())
+      // .pipe(cleanCSS({compatibility: 'ie8'}))
+      .pipe(gulp.dest(paths.styles.dest))
+      .pipe(browsersync.stream())
+};
 
 // Обработка Java Script, Type Script и Coffee Script
 function scripts() {
@@ -135,7 +145,7 @@ function scripts() {
   .pipe(babel({
     presets: ['@babel/env']
   }))
-  .pipe(uglify())
+  // .pipe(uglify())  -- минифицирует!
   // .pipe(concat('main.min.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(size({

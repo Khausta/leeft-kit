@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .geo {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__map {
+            width: 100%;
+            height: auto;
+        }
+
+        .second-title {
+            margin-bottom: 2.4vw;
+        }
+
+        .text:not(:last-child) {
+            margin-bottom: 3vw;
+        }
+
+        .feedback-block {
+            margin-bottom: 0;
+        }
+    }
+}

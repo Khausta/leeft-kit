@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+    .footer {
+        padding: 4.5vw 0;
+
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+           
+            grid-template-areas: 
+            "menu menu"
+            "service service"
+            "contacts contacts"
+            "rights design";
+
+            // gap: 2vw;
+        }
+
+        &__text {
+            font-size: 3.9vw;
+        }
+
+        &__menu-list {
+            display: flex;
+            flex-direction: row;
+            gap: 4vw;
+
+        }
+
+        &__menu {
+            padding-bottom: 3.6vw;
+            border-bottom: 1px solid $grey-border-color;
+        }
+
+        &__service {
+            padding: 3.6vw 0;
+            border-bottom: 1px solid $grey-border-color;
+        }
+
+        &__service-title {
+            margin-bottom: 3vw;
+        }
+
+        &__service-blocks {
+            flex-direction: column;
+        }
+
+        &__service-block {
+            width: 100%;
+        }
+
+        &__service-item {
+            max-width: 100%;
+            line-height: 1.35;
+            
+            &:not(:last-child) {
+                margin-bottom: 2.8vw;
+
+            }
+        }
+
+        &__contacts {
+            margin-top: 0;
+            padding: 3.6vw 0;
+            border-bottom: 1px solid $grey-border-color;
+            text-align: left;
+
+            .phone-number {
+                margin-bottom: 0;
+                margin-right: 2vw;
+                display: inline-block;
+                font-size: 4.6vw;
+            }
+        }
+
+        &__rights {
+            padding: 3.6vw 0;
+        }
+
+        &__design {
+            padding: 3.6vw 0;
+            align-self: start;
+        }  
+    }
+}

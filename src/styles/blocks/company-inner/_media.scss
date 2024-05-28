@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .company-inner {
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2vw;
+            grid-template-rows: 60vw;
+          
+        }
+
+        &__card {
+            border-radius: 5vw;
+        }
+    
+        &__card_text{
+          
+            padding: 5vw;
+            padding-right: 50%;
+            
+           
+        }
+
+        .small-text {
+            font-size: 2vw;
+        }
+    
+    }
+}
